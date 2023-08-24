@@ -1,0 +1,35 @@
+function App() {
+  let mystyle = {
+    color: "blue",
+    backgroundColor: "aliceblue"
+  };
+
+  return (
+    <>
+      <h4 style={mystyle}>using function to print and adjust color</h4>
+    </>
+  );
+}
+
+
+function App() {: This declares a functional component named App.
+
+let mystyle = { color: "blue", backgroundColor: "aliceblue" };: This line defines a JavaScript object named mystyle, which holds the styling properties for the <h4> element that follows.
+In this case, it sets the text color to "blue" and the background color to "aliceblue".
+
+return (: The beginning of the JSX block that the component will render.
+JSX is a syntax extension for JavaScript, often used in React for defining the structure and content of components.
+
+<>: This is a shorthand for a React fragment.
+A fragment is used to group multiple elements without introducing an additional parent element in the DOM. It's often used when you want to return multiple elements from a component.
+
+<h4 style={mystyle}>using function to print and adjust color</h4>: This is an <h4> (header 4) element being rendered.
+The style attribute is used to apply the CSS styles defined in the mystyle object to this element. So, the text inside the <h4> will have a blue color and the background will be a light blue color ("aliceblue").
+
+</>: Closing the fragment.
+
+);: Closing parenthesis for the return statement.
+
+So, in summary, this code defines a functional component named App that renders an <h4> element with the text "using function to print and adjust color".
+The text is displayed in blue color with a light blue background, as specified in the mystyle object.
+The use of fragments (<>...</>) allows multiple JSX elements to be returned without introducing an extra wrapping element in the rendered output.
