@@ -1,0 +1,26 @@
+<h3 style={{color:"white",backgroundColor:"gray"}}>hii there</h3><br/>
+
+
+<h3 style={{color:"white",backgroundColor:"gray"}}>hii there</h3>:
+
+This is an HTML line that creates a level 3 heading (<h3>).
+The style attribute is used to apply inline CSS styles to the heading element.
+In the style attribute, color:"white" sets the text color to white.
+backgroundColor:"gray" sets the background color of the heading to gray.
+The content of the heading is "hii there".
+
+
+
+
+
+
+
+
+<br/>:
+
+This is an HTML self-closing tag that represents a line break.
+It creates a visual break in the content, moving the subsequent content to the next line.
+So, the entire code creates a white text on a gray background level 3 heading saying "hii there", and then adds a line break after it.
+
+Please note that the usage of inline styles like this is not the best practice for styling in modern web development.
+It's more common to use external CSS files or internal <style> blocks in the <head> of the HTML document to separate the styling from the content.
