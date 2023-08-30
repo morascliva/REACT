@@ -203,25 +203,33 @@ import React from "react";
 
 import React from "react";: This line imports the React library, which is necessary for writing React components.
 
-export default function Arrays(props) {: This line starts the definition of a React functional component named Arrays. It accepts a props object as an argument.
+export default function Arrays(props) {: This line starts the definition of a React functional component named Arrays.
+  It accepts a props object as an argument.
 
-The code defines an array named people containing objects with information about different people, including their names, ages, emails, addresses, and marks in various subjects.
+The code defines an array named people containing objects with information about different people, including their names, ages, emails, addresses,
+  and marks in various subjects.
 
-const allMarksKeys = Array.from(...);: This line creates an array called allMarksKeys that contains unique keys from all the people's marks objects. It uses the Set data structure to collect all keys and then converts it back to an array using Array.from.
+const allMarksKeys = Array.from(...);: This line creates an array called allMarksKeys that contains unique keys from all the people's marks objects.
+  It uses the Set data structure to collect all keys and then converts it back to an array using Array.from.
 
 The return statement marks the beginning of the JSX code that will be rendered by the component.
 
-<h1 style={{ backgroundColor: "red", color: "white" }}>{props.title} Start</h1>: This JSX element renders an <h1> heading with a red background and white text color. The text content of the heading is retrieved from the props.title property.
+<h1 style={{ backgroundColor: "red", color: "white" }}>{props.title} Start</h1>: This JSX element renders an <h1> heading with a red background and
+  white text color. The text content of the heading is retrieved from the props.title property.
 
 <table border={2}>: This starts the definition of an HTML table with a border attribute set to 2, indicating that the table should have visible borders.
 
 Inside the table, a <tr> element is used to create a table row for the header.
 
-{allMarksKeys.map((key) => (<th key={key}>{key}</th>))}: This line uses the map function to iterate over the allMarksKeys array and creates a <th> element for each subject key. These <th> elements form the header cells of the table.
+{allMarksKeys.map((key) => (<th key={key}>{key}</th>))}:
+This line uses the map function to iterate over the allMarksKeys array and creates a <th> element for each subject key. 
+  These <th> elements form the header cells of the table.
 
-After the header row, there's a loop that iterates through the people array using the map function. For each person object, it creates a table row (<tr>) to display their information.
+After the header row, there's a loop that iterates through the people array using the map function. For each person object,
+  it creates a table row (<tr>) to display their information.
 
-{people.map((person, index) => {: This line starts the loop over the people array. It uses the map function, which passes each person object and its index to the subsequent code block.
+{people.map((person, index) => {: This line starts the loop over the people array. It uses the map function, 
+  which passes each person object and its index to the subsequent code block.
 
 <td>{index + 1}</td>: This cell displays the serial number of the person, calculated as index + 1.
 
@@ -233,7 +241,9 @@ After the header row, there's a loop that iterates through the people array usin
 
 <td>{person.address}</td>: This cell displays the address of the person.
 
-{allMarksKeys.map((key) => (<td key={key}>{person.marks[key] === " " ? "no marks" : person.marks[key]}</td>))}: This line uses another map function to iterate over the allMarksKeys array. For each subject key, it creates a table cell (<td>) to display the corresponding marks from the person's marks object. If the mark is " ", it displays "no marks".
+{allMarksKeys.map((key) => (<td key={key}>{person.marks[key] === " " ? "no marks" : person.marks[key]}</td>))}:
+This line uses another map function to iterate over the allMarksKeys array. For each subject key, it creates a table cell 
+  (<td>) to display the corresponding marks from the person's marks object. If the mark is " ", it displays "no marks".
 
 The </tr> tag closes the row for the current person.
 
@@ -243,5 +253,6 @@ The </table> tag closes the table.
 
 The </div> tag closes the enclosing <div> element that wraps the entire JSX code.
 
-Overall, this code defines a React component that renders a table displaying information about people and their marks in different subjects. The component receives a props object, which should include a title property to be displayed in the heading of the table.
+Overall, this code defines a React component that renders a table displaying information about people and their marks in different subjects.
+  The component receives a props object, which should include a title property to be displayed in the heading of the table.
 
