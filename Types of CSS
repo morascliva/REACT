@@ -7,9 +7,6 @@ component-based architecture and the use of JavaScript. Here are the common ways
 
 
 
-
-
-
 Inline Styles:
 
 Similar to inline styles in regular HTML, you can apply inline styles in React components using JSX.
