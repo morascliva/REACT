@@ -4,6 +4,7 @@ go to terminal then new terminal
 
 type the following commands 
 
+
 node -v
 npm -v
 npm init react-app my-react-app                       //my-react-app is the name of ur project
